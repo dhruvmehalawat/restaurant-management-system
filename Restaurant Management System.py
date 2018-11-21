@@ -35,23 +35,6 @@ operator =""
 txtdisplay = Entry(f2,font=('ariel' ,20,'bold'), textvariable=text_Input , bd=5 ,insertwidth=7 ,bg="white",justify='right')
 txtdisplay.grid(columnspan=4)
 
-def  btnclick(numbers):
-    global operator
-    operator=operator + str(numbers)
-    text_Input.set(operator)
-
-def clrdisplay():
-    global operator
-    operator=""
-    text_Input.set("")
-
-def eqals():
-    global operator
-    sumup=str(eval(operator))
-
-    text_Input.set(sumup)
-    operator = ""
-
 def Ref():
     x=random.randint(12980, 50876)
     randomRef = str(x)
